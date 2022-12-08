@@ -1,8 +1,32 @@
 header{
+    display: flex;
+    flex-direction: row;
     height:50px;
     background: rgb(10, 30, 56);
-    font-size: 30pt;
-    text-align: center;
+    font-size: 20pt;
     color: #FFF;
+    height: 100px;
+}
+nav{
+    background-color: lightgreen;
+    height: 50px;
+}
+main{
+    display: flex;
+    flex-direction: row;
+}
+
+article{
+    background-color: brown;
+    width: 70%;
+    margin-right: 5%;
+}
+aside{
+    margin-left: 0%;
+    background-color: rgb(66, 104, 124);
+    width: 20%;
+}
+footer{
+    background-color: gold;
     height: 100px;
 }
