@@ -6,23 +6,110 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="放關鍵字用">
     <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            border: 0;
+            outline: 0;
+            vertical-align: baseline;
+            background: transparent;
+            font-size: 1rem;
+            font-weight:normal;
+            line-height:1.86em;
+            word-spacing: 1px;
+            letter-spacing: 1px;
+        }
+        /* id */
+        #header {
+            height: 50px;
+            background-color: rgb(34, 204, 222);
+            margin-bottom: 20px;
+        }
+
+        /* 導向class */
+        .nav{
+            height: 200px;
+            margin-bottom: 20px;
+        }
+
+        .btn{
+            margin: 0.25rem 0.125rem;
+        }
+
+        .col-1 {
+            background: rgb(34, 204, 222);
+        }
+
+        .btn {
+            display: inline-block;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #212529;
+            text-align: center;
+            text-decoration: none;
+            vertical-align: middle;
+            cursor: pointer;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+            background-color: transparent;
+            border: 1px solid transparent;
+            padding: .375rem .75rem;
+            font-size: 1rem;
+            border-radius: .25rem;
+            transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+        }
+
+        .btn-warning {
+            color: #000;
+            background-color: #ffc107;
+            border-color: #ffc107;
+        }
+
+        .btn-primary:hover {
+            color: #fff;
+            background-color: #0b5ed7;
+            border-color: #0a58ca;
+        }
+
+        .btn-primary {
+            color: #fff;
+            background-color: #0d6efd;
+            border-color: #0d6efd;
+        }
+
+        .p2{
+            display: flex;
+            /* margin 上右下左 */
+            /* margin: 2em 4em 6em 8em; */
+            /* 上下一樣 左右一樣 */
+            margin: 5em 10em;
+            color: #fff;
+        }
+
+    </style>
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
     <!-- command+/ 註解 / 注意中英文輸入法 -->
     <!-- 區塊元素 -->
-    <header>
-        header
+    <header id="header">
+        <h1>主標</h1>
     </header>
-    <nav>
-        <!--行內元素-->
-        nav
+    <nav class="col-1 nav">
+        <ul>
+            <li><a href="#" class="btn btn-warning btn-sm">公司簡介</a></li>
+            <li><a href="#" class="btn btn-primary btn-sm">聯繫我們</a></li>
+            <li></li>
+        </ul>
     </nav>
     <main>
         <article>
-        article
             <section>
-                section
+            <!-- <p class="p2"></p> "p.p2+tab" -->
+            <p class="p2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit eveniet laboriosam blanditiis id obcaecati, est harum maxime dignissimos veniam sint ratione laudantium ipsa doloribus? Minima incidunt blanditiis fuga ipsum assumenda?</p>
             </section>
         </article>
         <aside>
