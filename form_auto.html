@@ -36,7 +36,7 @@
     <main class="container">
         <h1 class="text-center mt-3">表單</h1>
 
-        <form action="https://script.google.com/macros/s/AKfycbwtDqZiw3RSzAksn5TaFedWu_V0GGa51UrDXk9UVswEBCg_9bF18Hc9M0uuNxsxNpZg/exec" method="post" id="myForm">
+        <form action="https://script.google.com/macros/s/AKfycbySASay2eAZPCzsCaLC30bh_Uh8HJJ_IgLwEBGlVt8robrPsYRJvlar9_SxAv-gvJ83/exec" method="post" id="myForm">
             <div class="row" id="form_item">
             </div>
 
@@ -59,7 +59,9 @@
 
             let box = document.querySelector('.container');
             box.insertAdjacentHTML("afterend", "<div class='text-center mt-3'>container寬度：" + box.clientWidth + "px</div>" + "<div class='text-center mt-3'>網頁可見區域寬：" + document.body.clientWidth + "px</div>");
-
+// []陣列 索引初始值為0 陣列才有順序
+// 物件裡面都是字串
+// stru[0]['lable']
             let stru = [{
                     label: '姓名123',
                     type: 'text',
