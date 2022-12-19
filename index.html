@@ -200,8 +200,8 @@
                     form_item += `
             <!-- input text 文字方塊(單行) -->
             <div class="col-sm-${stru[i]['width']} mb-3">
-              <label for="${stru[i]['name']}" class="form-label">${stru[i]['label']}</label>
-              <input type="${stru[i]['type']}" name="${stru[i]['name']}" value="${stru[i]['value']}" class="form-control" id="${stru[i]['name']}" ${stru[i]['valid']}>
+            <label for="${stru[i]['name']}" class="form-label">${stru[i]['label']}</label>
+            <input type="${stru[i]['type']}" name="${stru[i]['name']}" value="${stru[i]['value']}" class="form-control" id="${stru[i]['name']}" ${stru[i]['valid']}>
             </div>`;
                 } else if (stru[i]['type'] === 'url') { //網址
                     form_item += `
