@@ -71,6 +71,7 @@
             // 取得結構資料
             let url = 'https://script.google.com/macros/s/AKfycbw4LfLvMhSHKmVjD9begiKAjDtJAUJrO3P-omu0e-J2oPWuchBf1y6rTx26uU5WcXcWRA/exec';
 
+            //api.gs中的 api_stru_payment 函式
             let data = {
                 op: 'api_stru_payment'
             }
@@ -128,7 +129,9 @@
                 },
                 success: function(result) { // 當成功接收到資料時
                     $("#show").prop("class","d-none my-5");
+
                     let stru = result;
+
                     create_template('form_item', stru);
 
                     $("#date").prop({
