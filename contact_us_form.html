@@ -47,12 +47,12 @@
     </div>
 
     <main class="container">
-        <h1 class="text-center mt-3">繳費通知單</h1>
+        <h1 class="text-center mt-3">聯絡我們</h1>
         <!-- -------------------------------- -->
         <form action="https://script.google.com/macros/s/AKfycbw4LfLvMhSHKmVjD9begiKAjDtJAUJrO3P-omu0e-J2oPWuchBf1y6rTx26uU5WcXcWRA/exec" class="" method="post" id="myForm">
             <div class="row" id="form_item">
             </div>
-            <input type="hidden" name="op" value="payment" id="op">
+            <input type="hidden" name="op" value="contact" id="op">
             <input type="hidden" name="callback_url" value="" id="callback_url">
             <input type="hidden" name="callback_home_url" value="" id="callback_home_url">
             <button type="submit" class="btn btn-primary w-100" id="submit">送出</button>
@@ -78,7 +78,7 @@
 
             //api.gs中的 api_stru_payment 函式
             let data = {
-                op: 'api_stru_payment'
+                op: 'api_stru_contact'
             }
             // 結構資料
             // let stru = [{
@@ -231,7 +231,7 @@
                     ${options_html}
                     </select>
                 </div>`;
-                } else if (stru[i]['type'] === '段落') {
+                } else if (stru[i]['type'] === 'textarea') {
 
                     form_item_html += `
                 <div class="col-sm-${stru[i]['width']} mb-3">
